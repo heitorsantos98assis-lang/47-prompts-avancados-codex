@@ -108,7 +108,7 @@ Antes, rode `git push -u origin <branch>` se a branch ainda nao esta no remoto. 
 
 ## Comeca
 
-[Opcional: descreva o PR ou deixe Claude deduzir do diff.]
+[Opcional: descreva o PR ou deixe Codex deduzir do diff.]
 ```
 
 ---

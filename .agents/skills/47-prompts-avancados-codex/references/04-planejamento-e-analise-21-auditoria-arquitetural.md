@@ -75,7 +75,7 @@ Encontre 3 exemplos de inconsistencia relevante. Ex:
 
 ### Etapa 8 — Relatorio final
 
-Entregue `docs/claude/AUDITORIA.md` com:
+Entregue `docs/codex/AUDITORIA.md` com:
 
 1. **Sumario em 5 bullets** — estado geral (use palavras honestas como "bagunca", "fragil", "solido mas arcaico", nao eufemismos)
 2. **Pontos fortes** — 3 coisas que estao bem

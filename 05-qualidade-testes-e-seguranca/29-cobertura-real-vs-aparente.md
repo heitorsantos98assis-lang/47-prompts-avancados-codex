@@ -81,7 +81,7 @@ Skipeds longos geralmente escondem bugs.
 
 ### Etapa 7 — Relatorio
 
-Entregue `docs/claude/COBERTURA.md`:
+Entregue `docs/codex/COBERTURA.md`:
 
 1. **Numeros aparentes** (do report)
 2. **Amostra auditada** (os 5 arquivos top + 5 bottom)

@@ -8,7 +8,7 @@
 
 ## Importante
 
-O Claude Code nao executa `git rebase -i` (precisa de TTY). Este prompt te guia a REESCRITA DE HISTORIA usando ferramentas nao interativas equivalentes: `git commit --fixup`, `git rebase --autosquash`, `git reset --soft`, `git cherry-pick`. Tudo seguro.
+O Codex nao executa `git rebase -i` (precisa de TTY). Este prompt te guia a REESCRITA DE HISTORIA usando ferramentas nao interativas equivalentes: `git commit --fixup`, `git rebase --autosquash`, `git reset --soft`, `git cherry-pick`. Tudo seguro.
 
 ---
 

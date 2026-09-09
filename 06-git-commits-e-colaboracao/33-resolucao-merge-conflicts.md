@@ -139,7 +139,7 @@ Rode Etapa 1 e me apresente o inventario.
 
 ## Variacoes e Ajustes
 
-**Conflito em arquivo binario:** Claude nao consegue resolver. Deixe claro: "arquivo binario, resolva manualmente."
+**Conflito em arquivo binario:** Codex nao consegue resolver. Deixe claro: "arquivo binario, resolva manualmente."
 
 **Conflito em lockfile (package-lock, pnpm-lock):** nao tente editar manualmente. O correto e: aceitar um lado, rodar `npm install` / `pnpm install` para regenerar.
 

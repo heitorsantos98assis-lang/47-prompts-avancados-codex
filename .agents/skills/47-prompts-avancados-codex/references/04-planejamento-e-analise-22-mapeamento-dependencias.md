@@ -75,7 +75,7 @@ Conte quantas dependencias TRANSITIVAS o projeto tem (use `npm ls --all | wc -l`
 
 ### Etapa 8 — Output: DEPENDENCIAS.md
 
-Salve em `docs/claude/DEPENDENCIAS.md` com:
+Salve em `docs/codex/DEPENDENCIAS.md` com:
 
 1. Sumario (numeros totais)
 2. Essenciais (tabela: nome | descricao | usos | status)

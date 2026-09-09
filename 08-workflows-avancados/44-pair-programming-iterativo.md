@@ -1,7 +1,7 @@
 # Prompt 44 — Pair Programming Iterativo
 
 **Categoria:** Workflows Avancados
-**Objetivo:** Configurar uma dinamica de trabalho em que o Claude atua como parceiro de pair programming — avanca em passos pequenos, pausa a cada passo para mostrar o que fez, aguarda seu "continue" ou "ajuste", e nunca entra no modo de "entregar tudo no final".
+**Objetivo:** Configurar uma dinamica de trabalho em que o Codex atua como parceiro de pair programming — avanca em passos pequenos, pausa a cada passo para mostrar o que fez, aguarda seu "continue" ou "ajuste", e nunca entra no modo de "entregar tudo no final".
 **Quando usar:** Em tarefas que voce quer acompanhar de perto, aprender junto, ou onde o risco de errar e alto o suficiente para nao confiar em entrega unica.
 
 ---
@@ -82,7 +82,7 @@ A cada conjunto logico de passos concluidos, sugira commitar. Commits frequentes
 
 ## Descricao da tarefa
 
-[DESCREVA A TAREFA OU COMECE A CONVERSA. Claude vai partir do zero.]
+[DESCREVA A TAREFA OU COMECE A CONVERSA. Codex vai partir do zero.]
 
 ## Confirme
 
@@ -105,8 +105,8 @@ Responda "modo pair ativo. Me conta a tarefa" e aguarde.
 
 - Pair programming e mais lento. E mais seguro, mais didatico. Use quando faz sentido, nao sempre.
 - Se voce se pega aprovando cegamente cada passo, desliga o modo e trabalha autonomo. O ponto do pair e participar.
-- Pair com o Claude NAO substitui pair com humano. Ambos tem valor diferente.
+- Pair com o Codex NAO substitui pair com humano. Ambos tem valor diferente.
 
 ## Sinal de que deu certo
 
-Voce entende cada linha que foi escrita. Nao tem aquele momento "espera, quando que isso foi adicionado?". O codigo final e seu tambem, nao so do Claude.
+Voce entende cada linha que foi escrita. Nao tem aquele momento "espera, quando que isso foi adicionado?". O codigo final e seu tambem, nao so do Codex.

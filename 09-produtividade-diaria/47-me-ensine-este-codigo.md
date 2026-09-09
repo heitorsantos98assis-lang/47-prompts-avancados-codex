@@ -1,7 +1,7 @@
 # Prompt 47 — Me Ensine Este Codigo (Aprendizado Guiado)
 
 **Categoria:** Produtividade Diaria
-**Objetivo:** Usar o Claude como tutor para entender de verdade um trecho de codigo, padrao, abstracao ou tecnica que voce nao domina — em modo didatico, com camadas progressivas de profundidade, perguntas verificadoras e analogias.
+**Objetivo:** Usar o Codex como tutor para entender de verdade um trecho de codigo, padrao, abstracao ou tecnica que voce nao domina — em modo didatico, com camadas progressivas de profundidade, perguntas verificadoras e analogias.
 **Quando usar:** Quando voce abre um codigo que parece magia, ou quer aprender uma tecnica nova vendo um exemplo real do projeto, ou esta fazendo onboarding pessoal em uma stack que e nova para voce.
 
 ---
@@ -114,7 +114,7 @@ Comece pela Etapa 1.
 
 ## Variacoes e Ajustes
 
-**Quero ser desafiado, nao explicado:** mude para "modo socratic" — Claude faz perguntas que me guiam ate eu chegar na resposta sozinho.
+**Quero ser desafiado, nao explicado:** mude para "modo socratic" — Codex faz perguntas que me guiam ate eu chegar na resposta sozinho.
 
 **Aprender comparando:** "me mostre 2 formas de fazer isso e os trade-offs". Bom para decidir entre alternativas.
 
@@ -124,9 +124,9 @@ Comece pela Etapa 1.
 
 ## Dicas de uso
 
-- Este e um dos prompts mais subutilizados. O Claude e excelente tutor quando voce o usa como tal.
+- Este e um dos prompts mais subutilizados. O Codex e excelente tutor quando voce o usa como tal.
 - Aprender no contexto do proprio projeto e mais durador do que tutorial generico.
-- Anote os padroes que aprender em `docs/claude/glossario.md` para revisar depois.
+- Anote os padroes que aprender em `docs/codex/glossario.md` para revisar depois.
 
 ## Sinal de que deu certo
 

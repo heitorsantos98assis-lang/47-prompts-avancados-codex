@@ -1,7 +1,7 @@
 # Prompt 43 — Red Team: Quebrar seu Proprio Codigo
 
 **Categoria:** Workflows Avancados
-**Objetivo:** Mudar a posture do Claude de "construir" para "quebrar" — invoca-lo como adversario tentando achar formas de fazer o codigo falhar, em vez de defender a implementacao atual.
+**Objetivo:** Mudar a posture do Codex de "construir" para "quebrar" — invoca-lo como adversario tentando achar formas de fazer o codigo falhar, em vez de defender a implementacao atual.
 **Quando usar:** Antes de entregar feature critica, antes de ir para producao, antes de abrir API publica, apos reescrever um modulo sensivel.
 
 ---
@@ -158,8 +158,8 @@ Comece pela Etapa 1.
 ## Dicas de uso
 
 - Red team sua propria entrega antes do review do time. Voce chega ao review ja corrigido.
-- Se o red team nao acha nada em um diff grande, desconfie. Ou o briefing esta fraco, ou o Claude ficou defensivo.
-- Rotacione red teams (hoje voce, amanha Claude, depois um colega). Cada um ve coisa diferente.
+- Se o red team nao acha nada em um diff grande, desconfie. Ou o briefing esta fraco, ou o Codex ficou defensivo.
+- Rotacione red teams (hoje voce, amanha Codex, depois um colega). Cada um ve coisa diferente.
 
 ## Sinal de que deu certo
 

@@ -1,8 +1,8 @@
-# 47 Prompts Avancados de Claude Code
+# 47 Prompts Avancados de Codex
 
-Uma colecao de 47 prompts profissionais para voce extrair o maximo do Claude Code. Cada prompt foi desenhado para resolver um problema real: reduzir custo de tokens, aumentar assertividade, evitar erros comuns, aplicar boas praticas e acelerar tarefas de engenharia de software.
+Uma colecao de 47 prompts profissionais para voce extrair o maximo do Codex. Cada prompt foi desenhado para resolver um problema real: reduzir custo de tokens, aumentar assertividade, evitar erros comuns, aplicar boas praticas e acelerar tarefas de engenharia de software.
 
-Estes nao sao prompts genericos. Sao prompts que assumem que voce usa Claude Code no dia-a-dia e quer resultado de nivel senior, sem retrabalho, sem alucinacao e sem explodir seu consumo de tokens.
+Estes nao sao prompts genericos. Sao prompts que assumem que voce usa Codex no dia-a-dia e quer resultado de nivel senior, sem retrabalho, sem alucinacao e sem explodir seu consumo de tokens.
 
 ---
 
@@ -10,11 +10,11 @@ Estes nao sao prompts genericos. Sao prompts que assumem que voce usa Claude Cod
 
 ### Passo 1: Descompacte o ZIP
 
-Descompacte `47-prompts-avancados-claude-code.zip` em qualquer pasta. Voce tera uma pasta raiz com 9 subpastas (categorias) e os 47 prompts distribuidos dentro delas.
+Descompacte `47-prompts-avancados-codex.zip` em qualquer pasta. Voce tera uma pasta raiz com 9 subpastas (categorias) e os 47 prompts distribuidos dentro delas.
 
 ### Passo 2: Escolha o prompt conforme a situacao
 
-Cada prompt e um arquivo Markdown independente. Abra o arquivo, copie o bloco marcado como **PROMPT** e cole no Claude Code.
+Cada prompt e um arquivo Markdown independente. Abra o arquivo, copie o bloco marcado como **PROMPT** e cole no Codex.
 
 ### Passo 3: Ajuste as variaveis
 
@@ -30,12 +30,12 @@ Cada prompt tem uma secao mostrando como adaptar a diferentes contextos (TypeScr
 
 ### 01 — Setup e Fundamentos (prompts 01-05)
 
-Como configurar o Claude Code para que ele ja comece com contexto correto do seu projeto. Eh aqui que se ganha ou perde qualidade nos primeiros 5 minutos.
+Como configurar o Codex para que ele ja comece com contexto correto do seu projeto. Eh aqui que se ganha ou perde qualidade nos primeiros 5 minutos.
 
-- 01 Criar CLAUDE.md Perfeito para o Projeto
-- 02 Estrutura Ideal de `.claude/` e Settings
+- 01 Criar AGENTS.md Perfeito para o Projeto
+- 02 Estrutura Ideal de `.codex/` e Settings
 - 03 Definir Scope, Limites e Guardrails
-- 04 Onboarding do Claude em Projeto Existente
+- 04 Onboarding do Codex em Projeto Existente
 - 05 Configuracao de Hooks para Automacao Repetitiva
 
 ### 02 — Economia Inteligente de Tokens (prompts 06-11)
@@ -51,7 +51,7 @@ Prompts que reduzem 30-70% do consumo de tokens em tarefas tipicas sem perder qu
 
 ### 03 — Assertividade e Prevencao de Erros (prompts 12-18)
 
-Como pedir tarefas ao Claude de um jeito que ele nao invente coisas, nao expande escopo, nao quebra o que nao precisa tocar.
+Como pedir tarefas ao Codex de um jeito que ele nao invente coisas, nao expande escopo, nao quebra o que nao precisa tocar.
 
 - 12 Bug Fix Cirurgico (Zero Scope Creep)
 - 13 Refatoracao Segura sem Quebrar Nada
@@ -74,7 +74,7 @@ Prompts para quando voce precisa entender um codigo antes de mexer. O antidoto p
 
 ### 05 — Qualidade, Testes e Seguranca (prompts 25-30)
 
-Prompts para transformar o Claude em revisor de staff engineer, testador rigoroso e auditor de seguranca.
+Prompts para transformar o Codex em revisor de staff engineer, testador rigoroso e auditor de seguranca.
 
 - 25 Code Review Profundo (Nivel Staff Engineer)
 - 26 Testes Unitarios que Realmente Testam
@@ -105,7 +105,7 @@ Prompts para debug estruturado: root cause ao inves de sintoma, bugs intermitent
 
 ### 08 — Workflows Avancados (prompts 41-44)
 
-Como usar subagentes, paralelismo, segundo par de olhos e pair programming com Claude.
+Como usar subagentes, paralelismo, segundo par de olhos e pair programming com Codex.
 
 - 41 Uso Correto de Subagentes Paralelos
 - 42 Segundo Par de Olhos (Review Independente)
@@ -126,8 +126,8 @@ Prompts curtos e praticos para o dia-a-dia. Standup, onboarding relampago e apre
 
 | Seu problema | Prompts recomendados |
 |---|---|
-| Claude alucina ou inventa APIs | 14, 18, 25 |
-| Claude muda mais do que eu pedi | 12, 16, 17 |
+| Codex alucina ou inventa APIs | 14, 18, 25 |
+| Codex muda mais do que eu pedi | 12, 16, 17 |
 | Gasto muito token por sessao | 06, 07, 08, 09, 10 |
 | Nao conheco o codebase | 19, 20, 22, 46 |
 | Bug dificil de achar | 36, 37, 38, 39 |

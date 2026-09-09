@@ -1,14 +1,14 @@
 # Prompt 03 — Definir Scope, Limites e Guardrails
 
 **Categoria:** Setup e Fundamentos
-**Objetivo:** Comunicar ao Claude, de forma duradoura e versionada, quais pastas/arquivos sao proibidos, quais mudancas exigem confirmacao humana e qual e o "raio de dano" aceitavel em cada area do projeto.
+**Objetivo:** Comunicar ao Codex, de forma duradoura e versionada, quais pastas/arquivos sao proibidos, quais mudancas exigem confirmacao humana e qual e o "raio de dano" aceitavel em cada area do projeto.
 **Quando usar:** Em projetos onde existe codigo legado intocavel, arquivos gerados automaticamente, areas de producao sensiveis, ou contratos com terceiros que nao podem ser modificados sem revisao.
 
 ---
 
 ## Por que este prompt existe
 
-Claude, por padrao, presume que tudo que esta no repo e editavel. Isso funciona para projetos novos mas e perigoso em projetos reais, onde ha:
+Codex, por padrao, presume que tudo que esta no repo e editavel. Isso funciona para projetos novos mas e perigoso em projetos reais, onde ha:
 
 - Pastas geradas (ex: `dist/`, `generated/`, `prisma/migrations/`)
 - Arquivos de lock (`pnpm-lock.yaml`, `Cargo.lock`, `poetry.lock`)
@@ -17,14 +17,14 @@ Claude, por padrao, presume que tudo que esta no repo e editavel. Isso funciona 
 - Migracoes de banco ja aplicadas em producao
 - Arquivos de seguranca (`auth/`, `crypto/`)
 
-Sem guardrails, o Claude pode refatorar algo "melhorando" e quebrar o mundo. Este prompt define os limites de forma explicita.
+Sem guardrails, o Codex pode refatorar algo "melhorando" e quebrar o mundo. Este prompt define os limites de forma explicita.
 
 ---
 
 ## PROMPT
 
 ```
-Quero definir os guardrails deste projeto para o Claude Code. Meu objetivo e criar uma secao no CLAUDE.md chamada "Limites e Guardrails" que deixe explicito o que voce pode, o que voce precisa perguntar antes, e o que voce NUNCA deve tocar.
+Quero definir os guardrails deste projeto para o Codex. Meu objetivo e criar uma secao no AGENTS.md chamada "Limites e Guardrails" que deixe explicito o que voce pode, o que voce precisa perguntar antes, e o que voce NUNCA deve tocar.
 
 Antes de escrever, investigue:
 
@@ -44,7 +44,7 @@ Para classificar, use estes sinais:
 
 3. Pergunte se ha alguma pasta que deve ser adicionada aos guardrails por motivo que voce nao consegue inferir do codigo (ex: "a pasta `legacy/` nao se toca por decisao politica").
 
-Apos a investigacao, escreva uma secao de CLAUDE.md neste formato exato:
+Apos a investigacao, escreva uma secao de AGENTS.md neste formato exato:
 
 ## Limites e Guardrails
 
@@ -85,16 +85,16 @@ Apos escrever, liste em 3 bullets as coisas que voce quase quis editar e se cont
 
 **Projeto com compliance (LGPD, SOC2, HIPAA):** adicione ao prompt: *"Qualquer codigo que toque PII, logs, ou dados de usuario deve ser classificado como 'proibido sem aprovacao' e documentado."*
 
-**Monorepo com donos diferentes:** peca para o Claude identificar `CODEOWNERS` e usar isso para definir guardrails por pacote.
+**Monorepo com donos diferentes:** peca para o Codex identificar `CODEOWNERS` e usar isso para definir guardrails por pacote.
 
 ---
 
 ## Dicas de uso
 
 - Rode uma vez no inicio do projeto e revise junto com o time.
-- Quando sentir que um guardrail ficou pesado demais (Claude parando para perguntar em algo trivial), edite a secao. Guardrails sao vivos.
-- Essa secao deve ir dentro do `CLAUDE.md` principal. Nao crie arquivo separado — se fragmentar, o Claude nao le.
+- Quando sentir que um guardrail ficou pesado demais (Codex parando para perguntar em algo trivial), edite a secao. Guardrails sao vivos.
+- Essa secao deve ir dentro do `AGENTS.md` principal. Nao crie arquivo separado — se fragmentar, o Codex nao le.
 
 ## Sinal de que deu certo
 
-Peca ao Claude para mexer em algo na area proibida. Ele deve parar e pedir confirmacao explicita com o motivo. Se ele editar sem perguntar, o guardrail nao esta no lugar certo ou esta vago demais.
+Peca ao Codex para mexer em algo na area proibida. Ele deve parar e pedir confirmacao explicita com o motivo. Se ele editar sem perguntar, o guardrail nao esta no lugar certo ou esta vago demais.

@@ -1,14 +1,14 @@
 # Prompt 12 — Bug Fix Cirurgico (Zero Scope Creep)
 
 **Categoria:** Assertividade e Prevencao de Erros
-**Objetivo:** Pedir ao Claude que corrija um bug especifico SEM tocar em nada mais — sem refatoracao, sem limpeza, sem "melhoria aproveitando a visita". So o fix, minimo, auditavel.
+**Objetivo:** Pedir ao Codex que corrija um bug especifico SEM tocar em nada mais — sem refatoracao, sem limpeza, sem "melhoria aproveitando a visita". So o fix, minimo, auditavel.
 **Quando usar:** Em qualquer correcao de bug onde voce precisa de um diff enxuto, facil de revisar, e que nao carregue riscos laterais.
 
 ---
 
 ## Por que este prompt existe
 
-O comportamento padrao do Claude e ser prestativo. Pedir "corrija o bug X" costuma gerar um fix junto com 5 refatoracoes, renomeacoes, remoções de imports nao usados, updates de tipos e "melhorias" que ninguem pediu. Isso infla o diff, aumenta o tempo de review, aumenta o risco de regressao e torna o PR um pesadelo.
+O comportamento padrao do Codex e ser prestativo. Pedir "corrija o bug X" costuma gerar um fix junto com 5 refatoracoes, renomeacoes, remoções de imports nao usados, updates de tipos e "melhorias" que ninguem pediu. Isso infla o diff, aumenta o tempo de review, aumenta o risco de regressao e torna o PR um pesadelo.
 
 Este prompt forca disciplina cirurgica: so o que e estritamente necessario para fazer o bug desaparecer.
 
@@ -93,7 +93,7 @@ Antes de comecar, responda apenas: "entendi. posso investigar?" — e aguarde me
 ## Dicas de uso
 
 - Resista a vontade de dizer "ja que voce esta ai, aproveita e arruma X". Cada bug = um PR.
-- Se o Claude fizer alem do pedido, peca para reverter as mudancas extras antes de commitar.
+- Se o Codex fizer alem do pedido, peca para reverter as mudancas extras antes de commitar.
 - Apos fix, rode lint/typecheck/testes relevantes. Se algo quebrou, e porque o fix extrapolou.
 
 ## Sinal de que deu certo

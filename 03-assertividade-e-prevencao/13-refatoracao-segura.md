@@ -8,7 +8,7 @@
 
 ## Por que este prompt existe
 
-Refatoracao e onde Claude mais erra. Nao porque o raciocinio esta errado, mas porque ele pode fazer mudancas grandes sem parar para validar. Em refactor, cada passo deve ser verificavel antes do proximo. O prompt abaixo impoe esse ritmo.
+Refatoracao e onde Codex mais erra. Nao porque o raciocinio esta errado, mas porque ele pode fazer mudancas grandes sem parar para validar. Em refactor, cada passo deve ser verificavel antes do proximo. O prompt abaixo impoe esse ritmo.
 
 ---
 
@@ -84,7 +84,7 @@ Para cada passo do plano:
 [DESCREVA EXATAMENTE:
 - O que voce quer refatorar (simbolo, modulo, pasta)
 - Qual e o estado final desejado (nome novo, estrutura nova)
-- Motivacao (opcional mas ajuda o Claude a nao extrapolar)]
+- Motivacao (opcional mas ajuda o Codex a nao extrapolar)]
 
 ## Confirme
 
@@ -106,7 +106,7 @@ Responda "entendi, comecando pela Etapa 1" e aguarde meu OK em cada etapa antes 
 ## Dicas de uso
 
 - Nunca faca refatoracao grande e bug fix no mesmo PR. Separados.
-- Quando o Claude errar em um passo, peca explicitamente para reverter apenas aquele passo, nao o refactor todo.
+- Quando o Codex errar em um passo, peca explicitamente para reverter apenas aquele passo, nao o refactor todo.
 - Mantenha commits intermediarios durante o refactor. Se der merda, voce reverte passo a passo.
 
 ## Sinal de que deu certo

@@ -2,7 +2,7 @@
 
 **Categoria:** Economia Inteligente de Tokens
 **Objetivo:** Usar subagentes (Agent tool) estrategicamente, nao para "fazer mais coisa", mas para proteger o contexto principal de ruido — delegar buscas, auditorias e exploracoes que gerariam muita leitura, e receber apenas o relatorio final.
-**Quando usar:** Sempre que voce fizer uma pergunta que o Claude teria que abrir 5+ arquivos para responder, ou quando voce quer um "segundo par de olhos" sem poluir a sessao principal.
+**Quando usar:** Sempre que voce fizer uma pergunta que o Codex teria que abrir 5+ arquivos para responder, ou quando voce quer um "segundo par de olhos" sem poluir a sessao principal.
 
 ---
 

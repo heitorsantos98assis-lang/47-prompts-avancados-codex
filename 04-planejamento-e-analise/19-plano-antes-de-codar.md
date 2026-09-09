@@ -1,14 +1,14 @@
 # Prompt 19 — Plano de Implementacao Antes de Codar
 
 **Categoria:** Planejamento e Analise de Codebase
-**Objetivo:** Forcar o Claude a produzir um plano de implementacao por escrito, revisavel, com passos ordenados, arquivos afetados e pontos de decisao, antes de escrever qualquer linha de codigo.
+**Objetivo:** Forcar o Codex a produzir um plano de implementacao por escrito, revisavel, com passos ordenados, arquivos afetados e pontos de decisao, antes de escrever qualquer linha de codigo.
 **Quando usar:** Em toda feature nao trivial (qualquer coisa que envolva > 1 arquivo, logica de negocio ou integracao externa). Para one-liners e bug fixes simples, nao e necessario.
 
 ---
 
 ## Por que este prompt existe
 
-"Comecar a codar e descobrir na marra" e uma das fontes mais caras de retrabalho. O Claude erra a arquitetura, voce so percebe depois de 200 linhas, e ai descobrir que o approach e furado. Um plano de 15 minutos custa 10% do custo de reescrever.
+"Comecar a codar e descobrir na marra" e uma das fontes mais caras de retrabalho. O Codex erra a arquitetura, voce so percebe depois de 200 linhas, e ai descobrir que o approach e furado. Um plano de 15 minutos custa 10% do custo de reescrever.
 
 Planos bem feitos tambem sao auditaveis por humano — voce le em 2 minutos e decide se o approach esta certo antes de autorizar.
 
@@ -126,7 +126,7 @@ Responda "vou investigar antes de planejar" e faca a investigacao. Depois devolv
 ## Dicas de uso
 
 - Coloque o plano aprovado no comeco do PR description. Vira contrato para o review.
-- Se o Claude pular para codar antes do plano, interrompa: "espera, quero o plano antes".
+- Se o Codex pular para codar antes do plano, interrompa: "espera, quero o plano antes".
 - Planos otimos tambem servem para comparar implementacoes — se o final divergiu do plano, descubra por que.
 
 ## Sinal de que deu certo

@@ -2,7 +2,7 @@
 
 **Categoria:** Assertividade e Prevencao de Erros
 **Objetivo:** Estabelecer um protocolo explicito para toda acao irreversivel (remover arquivos, dropar tabelas, force push, deletar branches, rodar comandos de producao, chamar APIs pagas) — nada acontece sem dupla confirmacao e explicacao de impacto.
-**Quando usar:** Em qualquer projeto real. Sempre. Deveria estar no `CLAUDE.md` de todos os projetos serios.
+**Quando usar:** Em qualquer projeto real. Sempre. Deveria estar no `AGENTS.md` de todos os projetos serios.
 
 ---
 
@@ -104,10 +104,10 @@ Responda "protocolo de seguranca ativo" e aguarde a tarefa.
 
 ## Dicas de uso
 
-- Coloque uma versao compacta desta tabela no `CLAUDE.md` de todo projeto que for alem de hobby.
-- Quando o Claude perguntar "confirma?", NAO aprove no automatico. Leia o comando. Se parece errado, reprove.
-- Se voce se pegou aprovando tudo sem ler, considere configurar `.claude/settings.json` com `permissions.deny` para reforcar.
+- Coloque uma versao compacta desta tabela no `AGENTS.md` de todo projeto que for alem de hobby.
+- Quando o Codex perguntar "confirma?", NAO aprove no automatico. Leia o comando. Se parece errado, reprove.
+- Se voce se pegou aprovando tudo sem ler, considere configurar `.codex/settings.json` com `permissions.deny` para reforcar.
 
 ## Sinal de que deu certo
 
-Voce nunca mais tem aquele momento "pera, por que ele fez isso?!" em que o Claude apagou um arquivo ou forcou um push. A sessao pode ficar um pouco mais lenta. E exatamente o que deve.
+Voce nunca mais tem aquele momento "pera, por que ele fez isso?!" em que o Codex apagou um arquivo ou forcou um push. A sessao pode ficar um pouco mais lenta. E exatamente o que deve.

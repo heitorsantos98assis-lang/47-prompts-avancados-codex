@@ -127,7 +127,7 @@ Se voce tem DUVIDA se um achado e real ou falso positivo, marque como "a confirm
 
 ### Etapa 5 — Relatorio
 
-Entregue `docs/claude/SEGURANCA.md` com:
+Entregue `docs/codex/SEGURANCA.md` com:
 
 1. **Sumario executivo** — criticos/altos/medios/baixos em numeros
 2. **Criticos** (bloqueiam producao ate corrigir)
@@ -162,7 +162,7 @@ Comece pela Etapa 1.
 
 - Rode esta auditoria antes de ir para producao pela primeira vez. E tambem a cada 6 meses.
 - Ferramentas automatizadas (Semgrep, Snyk Code, CodeQL) sao complementares. Use ambos.
-- Se o Claude sugerir correcao, NAO aplique direto — entenda primeiro. Seguranca e armadilha.
+- Se o Codex sugerir correcao, NAO aplique direto — entenda primeiro. Seguranca e armadilha.
 
 ## Sinal de que deu certo
 

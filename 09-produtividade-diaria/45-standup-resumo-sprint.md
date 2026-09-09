@@ -141,7 +141,7 @@ Comece pela Etapa 1.
 
 ## Dicas de uso
 
-- Voce pode adicionar contexto manual antes de rodar (ex: "ontem tambem participei de uma reuniao sobre X"), o Claude incorpora.
+- Voce pode adicionar contexto manual antes de rodar (ex: "ontem tambem participei de uma reuniao sobre X"), o Codex incorpora.
 - Cuidado com over-claim. Standup e nao-competitivo. Diga o que fez sem inflar.
 - Bloqueios sao a parte mais importante de standup. Nao omita por vergonha.
 

@@ -1,8 +1,8 @@
 # Prompt 14 — Anti-Alucinacao: Verificacao Obrigatoria
 
 **Categoria:** Assertividade e Prevencao de Erros
-**Objetivo:** Forcar o Claude a verificar a existencia real de simbolos, arquivos, APIs, flags e assinaturas antes de afirmar que algo existe ou propor usar. Eliminar o tipo de erro "inventei a funcao `config.getOrDefault()` que nunca existiu".
-**Quando usar:** Em projetos com muito codigo proprio, com APIs internas nao-standard, ou sempre que voce nota o Claude "chutando" nomes de funcoes.
+**Objetivo:** Forcar o Codex a verificar a existencia real de simbolos, arquivos, APIs, flags e assinaturas antes de afirmar que algo existe ou propor usar. Eliminar o tipo de erro "inventei a funcao `config.getOrDefault()` que nunca existiu".
+**Quando usar:** Em projetos com muito codigo proprio, com APIs internas nao-standard, ou sempre que voce nota o Codex "chutando" nomes de funcoes.
 
 ---
 
@@ -10,7 +10,7 @@
 
 Alucinacao nao e burrice. E o modelo completando um padrao plausivel. "Provavelmente existe um `config.getOrDefault()`" — existe em muitas libs, entao o modelo assume. Em seu projeto, talvez nao exista. O codigo parece certo, compila ate certo ponto, e entao quebra em runtime.
 
-A unica prevencao confiavel e instruir o Claude a verificar ANTES de afirmar. Este prompt define o que significa "verificar".
+A unica prevencao confiavel e instruir o Codex a verificar ANTES de afirmar. Este prompt define o que significa "verificar".
 
 ---
 
@@ -88,7 +88,7 @@ Responda apenas "modo anti-alucinacao ativo" e aguarde a tarefa.
 
 ## Variacoes e Ajustes
 
-**Projeto com APIs internas com nomes parecidos a APIs publicas famosas:** coloque no `CLAUDE.md` uma secao "APIs internas e suas assinaturas" para servir de ancora.
+**Projeto com APIs internas com nomes parecidos a APIs publicas famosas:** coloque no `AGENTS.md` uma secao "APIs internas e suas assinaturas" para servir de ancora.
 
 **Projeto em linguagem menos conhecida (Elixir, Haskell, Elm):** reforce a regra 2x mais — o modelo tem mais chance de alucinar nesses ecossistemas.
 
@@ -98,10 +98,10 @@ Responda apenas "modo anti-alucinacao ativo" e aguarde a tarefa.
 
 ## Dicas de uso
 
-- Ao notar alucinacao, corrija imediatamente. O Claude aprende pelo feedback imediato da sessao.
+- Ao notar alucinacao, corrija imediatamente. O Codex aprende pelo feedback imediato da sessao.
 - Sempre que poder, cite a versao da lib na propria pergunta. Isso ancora o modelo.
-- Para APIs externas criticas (Stripe, AWS), prefira pedir ao Claude que busque a doc oficial antes de propor codigo.
+- Para APIs externas criticas (Stripe, AWS), prefira pedir ao Codex que busque a doc oficial antes de propor codigo.
 
 ## Sinal de que deu certo
 
-Voce percebe mais vezes "vou verificar primeiro" antes do Claude propor codigo. Erros de "a funcao X nao existe" caem para quase zero.
+Voce percebe mais vezes "vou verificar primeiro" antes do Codex propor codigo. Erros de "a funcao X nao existe" caem para quase zero.

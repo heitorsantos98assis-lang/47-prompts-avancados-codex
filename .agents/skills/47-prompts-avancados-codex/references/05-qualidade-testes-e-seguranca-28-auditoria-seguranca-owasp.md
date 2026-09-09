@@ -127,7 +127,7 @@ Se voce tem DUVIDA se um achado e real ou falso positivo, marque como "a confirm
 
 ### Etapa 5 — Relatorio
 
-Entregue `docs/claude/SEGURANCA.md` com:
+Entregue `docs/codex/SEGURANCA.md` com:
 
 1. **Sumario executivo** — criticos/altos/medios/baixos em numeros
 2. **Criticos** (bloqueiam producao ate corrigir)

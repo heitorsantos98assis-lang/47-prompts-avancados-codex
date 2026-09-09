@@ -130,14 +130,14 @@ Execute Etapa 1 e me apresente o que achou.
 
 **Investigacao de linha unica:** reduza para Etapa 3 e 4, so blame + show do commit.
 
-**Investigacao em fork/codigo espelhado:** considere que a historia original pode estar em outro repo. Diga ao Claude qual e o repo upstream.
+**Investigacao em fork/codigo espelhado:** considere que a historia original pode estar em outro repo. Diga ao Codex qual e o repo upstream.
 
 ---
 
 ## Dicas de uso
 
 - `git log -S` (pickaxe) e sub-utilizado. Aprenda a usar.
-- Quando achar a resposta ("ah, isso foi adicionado por causa de X"), adicione um comentario no codigo se for util para quem vier depois. Ou um entry em `docs/claude/decisoes.md`.
+- Quando achar a resposta ("ah, isso foi adicionado por causa de X"), adicione um comentario no codigo se for util para quem vier depois. Ou um entry em `docs/codex/decisoes.md`.
 - Arqueologia antes de refactor evita "desfazer sem querer uma decisao deliberada".
 
 ## Sinal de que deu certo

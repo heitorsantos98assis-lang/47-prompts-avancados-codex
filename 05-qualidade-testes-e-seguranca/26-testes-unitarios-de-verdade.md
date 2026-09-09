@@ -10,7 +10,7 @@
 
 O maior crime do teste unitario ruim e: (1) amarrar em detalhes internos, (2) testar que a funcao chama a funcao X com o argumento Y, sem se importar com o resultado, (3) cobrir linhas sem cobrir condicoes, (4) esconder bugs reais com mocks otimistas.
 
-Este prompt instrui o Claude a escrever o oposto disso.
+Este prompt instrui o Codex a escrever o oposto disso.
 
 ---
 
@@ -118,11 +118,11 @@ Responda "lendo o codigo" e comece pela Etapa 1.
 
 ## Variacoes e Ajustes
 
-**Projeto sem suite de testes ainda:** peca primeiro para o Claude definir o framework e config minima, e so depois gerar testes.
+**Projeto sem suite de testes ainda:** peca primeiro para o Codex definir o framework e config minima, e so depois gerar testes.
 
-**Codigo com I/O pesado (banco, rede):** peca para o Claude classificar quais casos sao unit e quais exigem integration. Nao force tudo em unit.
+**Codigo com I/O pesado (banco, rede):** peca para o Codex classificar quais casos sao unit e quais exigem integration. Nao force tudo em unit.
 
-**TDD estrito:** inverta — escreva testes vermelhos primeiro, mostre o codigo-fonte atual, e so entao o Claude escreve o codigo que passa.
+**TDD estrito:** inverta — escreva testes vermelhos primeiro, mostre o codigo-fonte atual, e so entao o Codex escreve o codigo que passa.
 
 ---
 

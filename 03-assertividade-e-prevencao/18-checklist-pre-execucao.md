@@ -1,7 +1,7 @@
 # Prompt 18 — Checklist Pre-Execucao de Tarefa Critica
 
 **Categoria:** Assertividade e Prevencao de Erros
-**Objetivo:** Antes de tocar em codigo ou rodar comandos, forcar o Claude a passar por um checklist formal de 10 perguntas que exposa premissas erradas, falta de informacao ou armadilhas obvias.
+**Objetivo:** Antes de tocar em codigo ou rodar comandos, forcar o Codex a passar por um checklist formal de 10 perguntas que exposa premissas erradas, falta de informacao ou armadilhas obvias.
 **Quando usar:** Em tarefas de alto risco — mudancas em producao, migracoes, refactors amplos, integracoes com sistemas externos, qualquer coisa que, se der errado, e dificil de desfazer.
 
 ---

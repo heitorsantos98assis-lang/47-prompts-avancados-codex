@@ -1,14 +1,14 @@
 # Prompt 15 — Criterios de Aceitacao Explicitos
 
 **Categoria:** Assertividade e Prevencao de Erros
-**Objetivo:** Transformar qualquer tarefa que voce passa ao Claude em uma tarefa com criterios de aceitacao definidos, que o proprio Claude precisa atender (e autoverificar) antes de dizer "pronto".
+**Objetivo:** Transformar qualquer tarefa que voce passa ao Codex em uma tarefa com criterios de aceitacao definidos, que o proprio Codex precisa atender (e autoverificar) antes de dizer "pronto".
 **Quando usar:** Sempre que voce for pedir algo maior que um bug fix — features, integracoes, migracoes, implementacoes novas. Criterios de aceitacao sao a diferenca entre "terminei" e "entrega correta".
 
 ---
 
 ## Por que este prompt existe
 
-Sem criterios, "pronto" e uma opiniao do Claude, nao um fato. Com criterios, "pronto" e verificavel. O modelo passa a trabalhar backwards do resultado, e voce elimina o famoso "achei que tinha terminado mas falta metade."
+Sem criterios, "pronto" e uma opiniao do Codex, nao um fato. Com criterios, "pronto" e verificavel. O modelo passa a trabalhar backwards do resultado, e voce elimina o famoso "achei que tinha terminado mas falta metade."
 
 ---
 
@@ -67,7 +67,7 @@ Se algo negativo foi violado, voce NAO terminou. Volte e corrija.
 
 ## Descricao da tarefa
 
-[COLE AQUI A TAREFA NA LINGUAGEM NATURAL QUE VOCE QUISER. O Claude vai reformular em criterios.]
+[COLE AQUI A TAREFA NA LINGUAGEM NATURAL QUE VOCE QUISER. O Codex vai reformular em criterios.]
 
 ## Confirme
 
@@ -88,7 +88,7 @@ Responda primeiro: "entendi, vou reformular em criterios". Depois devolva a list
 
 ## Dicas de uso
 
-- Se voce se pegou validando criterios vagos do Claude, reforce: "esse criterio nao da para verificar objetivamente. Reescreva."
+- Se voce se pegou validando criterios vagos do Codex, reforce: "esse criterio nao da para verificar objetivamente. Reescreva."
 - Mantenha os criterios no PR description depois. Vira documentacao e facilita review.
 - Para tarefas recorrentes, crie um template de criterios e reuse.
 

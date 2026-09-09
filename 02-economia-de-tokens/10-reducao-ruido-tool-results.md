@@ -1,14 +1,14 @@
 # Prompt 10 — Reducao de Ruido em Tool Results
 
 **Categoria:** Economia Inteligente de Tokens
-**Objetivo:** Fazer comandos Bash, builds, testes e outros outputs volumosos retornarem apenas o que importa, de forma que o Claude nao encha o contexto com stack traces gigantes, logs de npm, ou 10 mil linhas de build do webpack.
+**Objetivo:** Fazer comandos Bash, builds, testes e outros outputs volumosos retornarem apenas o que importa, de forma que o Codex nao encha o contexto com stack traces gigantes, logs de npm, ou 10 mil linhas de build do webpack.
 **Quando usar:** Em projetos onde rodar teste/build gera muito output mesmo em sucesso, ou onde erros vem acompanhados de centenas de linhas irrelevantes.
 
 ---
 
 ## Por que este prompt existe
 
-Um simples `npm test` pode jogar 8 mil linhas no contexto mesmo quando tudo passa. Um `npm run build` do webpack pode retornar 3 mil linhas de progresso. Isso e tudo "ruido": o Claude nao ganha nada com isso, voce paga pelos tokens.
+Um simples `npm test` pode jogar 8 mil linhas no contexto mesmo quando tudo passa. Um `npm run build` do webpack pode retornar 3 mil linhas de progresso. Isso e tudo "ruido": o Codex nao ganha nada com isso, voce paga pelos tokens.
 
 A boa noticia: voce pode filtrar o ruido antes mesmo de ele chegar ao contexto, usando flags de verbosidade baixa, grep no comando, ou capturando saida em arquivo.
 
@@ -93,8 +93,8 @@ Responda "modo silencioso ativo" e aguarde minha tarefa.
 
 ## Dicas de uso
 
-- Coloque uma versao desta regra no `CLAUDE.md` como "politica de execucao de comandos".
-- Se algum comando for cronicamente verboso, crie um alias ou script `scripts/quiet-test.sh` que ja aplica filtros e peca ao Claude para usar o script.
+- Coloque uma versao desta regra no `AGENTS.md` como "politica de execucao de comandos".
+- Se algum comando for cronicamente verboso, crie um alias ou script `scripts/quiet-test.sh` que ja aplica filtros e peca ao Codex para usar o script.
 - Monitore sua media de tokens por resposta. Esta politica deve reduzir sensivelmente em sessoes com muitos Bash.
 
 ## Sinal de que deu certo

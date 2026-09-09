@@ -2,7 +2,7 @@
 
 **Categoria:** Qualidade, Testes e Seguranca
 **Objetivo:** Submeter um diff (ou arquivo) a um code review de nivel staff engineer — nao um "LGTM" sem leitura, nao um nitpick de estilo, mas um review que caca bugs reais, premissas fracas, edge cases, riscos e decisoes de design.
-**Quando usar:** Antes de abrir PR, antes de aprovar PR de outro dev, ou quando voce quer um segundo par de olhos antes de confiar em uma entrega do proprio Claude.
+**Quando usar:** Antes de abrir PR, antes de aprovar PR de outro dev, ou quando voce quer um segundo par de olhos antes de confiar em uma entrega do proprio Codex.
 
 ---
 
@@ -150,7 +150,7 @@ Comece pelo Passo 1.
 
 **Review de PR de outra pessoa:** troque "voce e staff engineer" por "voce vai revisar o trabalho de um dev semi-junior. Seja educado mas direto. Explique o 'por que' em cada achado para ser didatico."
 
-**Review em modo de pairing:** peca para o Claude pausar a cada passo e aguardar voce concordar antes de avancar. Mais lento mas didatico.
+**Review em modo de pairing:** peca para o Codex pausar a cada passo e aguardar voce concordar antes de avancar. Mais lento mas didatico.
 
 **Review de codigo critico de producao:** enderece o Passo 4 com mais profundidade, rode o Prompt 28 (OWASP) em seguida.
 
@@ -158,9 +158,9 @@ Comece pelo Passo 1.
 
 ## Dicas de uso
 
-- Rode este prompt antes de pedir review humano. Libere os olhos humanos para pegar o que o Claude nao pega.
+- Rode este prompt antes de pedir review humano. Libere os olhos humanos para pegar o que o Codex nao pega.
 - Nao aceite "parece ok" como resposta. Se vier assim, peca "cite 5 coisas especificas que voce analisou".
-- Se o Claude entregar review com zero achados em um diff grande, duvide. Peca "voce realmente olhou os casos vazios? null? permissao?"
+- Se o Codex entregar review com zero achados em um diff grande, duvide. Peca "voce realmente olhou os casos vazios? null? permissao?"
 
 ## Sinal de que deu certo
 

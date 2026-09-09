@@ -78,7 +78,7 @@ Com `git blame`, encontre comentarios `TODO:`, `FIXME:`, `XXX:` com > 1 ano. Ess
 
 ## Output esperado
 
-Entregue `docs/claude/CODIGO-MORTO.md` com:
+Entregue `docs/codex/CODIGO-MORTO.md` com:
 
 1. **Sumario** — quantidade por categoria
 2. **Remocao segura (alta confianca)** — itens onde voce tem certeza

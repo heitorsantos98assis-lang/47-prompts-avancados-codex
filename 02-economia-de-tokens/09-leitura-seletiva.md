@@ -1,7 +1,7 @@
 # Prompt 09 — Leitura Seletiva vs Leitura Completa de Arquivos
 
 **Categoria:** Economia Inteligente de Tokens
-**Objetivo:** Definir uma politica explicita de quando o Claude pode ler um arquivo inteiro, quando deve ler por trechos (offset + limit), e quando deve apenas fazer Grep, para evitar abrir arquivos gigantes sem necessidade.
+**Objetivo:** Definir uma politica explicita de quando o Codex pode ler um arquivo inteiro, quando deve ler por trechos (offset + limit), e quando deve apenas fazer Grep, para evitar abrir arquivos gigantes sem necessidade.
 **Quando usar:** Ao comecar uma sessao em projeto que tem alguns arquivos monstro (rotas com 2000 linhas, schemas com 10 mil linhas, componentes React com 3 mil).
 
 ---
@@ -10,7 +10,7 @@
 
 A ferramenta `Read` traz arquivos inteiros por padrao. Em projetos medios, ha sempre alguns arquivos gigantes que, quando lidos inteiros, consomem de 5 a 20 mil tokens cada. Um unico Read desses pode equivaler a uma hora de conversa.
 
-Na pratica, voce quase nunca precisa do arquivo inteiro — voce precisa de uma funcao, de um bloco, de um contexto de 50 linhas em torno de uma linha especifica. Este prompt ensina o Claude a "mirar" ao inves de "baldear".
+Na pratica, voce quase nunca precisa do arquivo inteiro — voce precisa de uma funcao, de um bloco, de um contexto de 50 linhas em torno de uma linha especifica. Este prompt ensina o Codex a "mirar" ao inves de "baldear".
 
 ---
 
@@ -81,9 +81,9 @@ Responda "leitura seletiva ativa" e espere minha tarefa.
 
 ## Dicas de uso
 
-- Esta regra eh excelente candidata a entrar no `CLAUDE.md` do projeto como politica permanente.
+- Esta regra eh excelente candidata a entrar no `AGENTS.md` do projeto como politica permanente.
 - Voce pode combinar com o Prompt 07 (anti-context-bloat) para efeito composto.
-- Se o Claude violar, avise uma vez ("voce leu inteiro sem necessidade"). Ele corrige.
+- Se o Codex violar, avise uma vez ("voce leu inteiro sem necessidade"). Ele corrige.
 
 ## Sinal de que deu certo
 

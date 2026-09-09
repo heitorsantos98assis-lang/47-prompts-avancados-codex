@@ -1,7 +1,7 @@
 # Prompt 20 — Exploracao Sistematica de Codebase Desconhecido
 
 **Categoria:** Planejamento e Analise de Codebase
-**Objetivo:** Guiar o Claude numa exploracao estruturada de um repo que ele (e voce) nao conhece, entregando um mapa mental usavel, em vez de "abrir arquivos aleatorios na esperanca de entender".
+**Objetivo:** Guiar o Codex numa exploracao estruturada de um repo que ele (e voce) nao conhece, entregando um mapa mental usavel, em vez de "abrir arquivos aleatorios na esperanca de entender".
 **Quando usar:** Quando voce precisa trabalhar em um codebase que nunca viu — novo emprego, repo herdado, open source que voce vai contribuir, bug em projeto de terceiros.
 
 ---
@@ -60,7 +60,7 @@ Liste 5 perguntas que voce tem sobre o projeto e que precisaria me perguntar (ou
 
 ### Passo 7 — Output: MAPA.md
 
-Reuna tudo em um arquivo `docs/claude/MAPA.md` (cria a pasta se precisar) com as secoes:
+Reuna tudo em um arquivo `docs/codex/MAPA.md` (cria a pasta se precisar) com as secoes:
 
 1. Projeto — 1 paragrafo
 2. Stack
@@ -93,15 +93,15 @@ Responda "ok, comecando pelo Passo 1" e execute os passos em ordem.
 
 **Projeto sem documentacao alguma:** aceite que o Passo 1 sera curto. Va direto para Passo 2 e 3 com mais cuidado.
 
-**Open source famoso:** antes de explorar, peca para o Claude buscar a doc publica (WebFetch). Muitas vezes ha site de docs que economiza tudo.
+**Open source famoso:** antes de explorar, peca para o Codex buscar a doc publica (WebFetch). Muitas vezes ha site de docs que economiza tudo.
 
 ---
 
 ## Dicas de uso
 
 - Reserve uma sessao para isso. Nao misture com tarefa real.
-- O `MAPA.md` vira referencia. Commit no repo (ou em `docs/claude/`).
-- Apos o mapa, o Claude (e voce) trabalham com muito mais assertividade.
+- O `MAPA.md` vira referencia. Commit no repo (ou em `docs/codex/`).
+- Apos o mapa, o Codex (e voce) trabalham com muito mais assertividade.
 
 ## Sinal de que deu certo
 

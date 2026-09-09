@@ -99,7 +99,7 @@ Apos commitar, rode `git log -1` para mostrar que ficou bem.
 
 ## Comeca
 
-[Opcional: cole o contexto da mudanca, issue, ou deixe vazio para eu explicar quando Claude perguntar.]
+[Opcional: cole o contexto da mudanca, issue, ou deixe vazio para eu explicar quando Codex perguntar.]
 ```
 
 ---
@@ -108,7 +108,7 @@ Apos commitar, rode `git log -1` para mostrar que ficou bem.
 
 **Multi-commit (voce fez muita coisa e quer dividir):** peca *"analise a diff e proponha dividir em N commits coerentes, cada um com mensagem propria e lista de arquivos."*
 
-**Commit de merge/revert:** o Claude deve usar mensagem automatica do git para merge/revert, e adicionar uma linha explicativa ao final, nao reescrever.
+**Commit de merge/revert:** o Codex deve usar mensagem automatica do git para merge/revert, e adicionar uma linha explicativa ao final, nao reescrever.
 
 **Projeto com hook de commit (commitlint):** peca para respeitar regex do commitlint do projeto. Voce pode colar o `.commitlintrc` no comeco.
 

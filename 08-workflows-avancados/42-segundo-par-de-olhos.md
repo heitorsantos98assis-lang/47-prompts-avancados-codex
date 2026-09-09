@@ -1,14 +1,14 @@
 # Prompt 42 — Segundo Par de Olhos (Review Independente)
 
 **Categoria:** Workflows Avancados
-**Objetivo:** Obter uma avaliacao independente, por um "outro Claude" que nao participou da sessao, sobre a qualidade e corretude do que foi produzido — um review sem as cegueiras que a propria sessao acumulou.
-**Quando usar:** Ao final de uma tarefa nao trivial, antes de commitar ou abrir PR. Especialmente valioso apos tarefas longas onde o Claude foi "colaborando junto" e pode estar com vies confirmatorio.
+**Objetivo:** Obter uma avaliacao independente, por um "outro Codex" que nao participou da sessao, sobre a qualidade e corretude do que foi produzido — um review sem as cegueiras que a propria sessao acumulou.
+**Quando usar:** Ao final de uma tarefa nao trivial, antes de commitar ou abrir PR. Especialmente valioso apos tarefas longas onde o Codex foi "colaborando junto" e pode estar com vies confirmatorio.
 
 ---
 
 ## Por que este prompt existe
 
-Na mesma sessao, o Claude tende a defender o que ele mesmo escreveu. E natural — ele construiu gradualmente e nao ve por que mudar. Um novo subagente, sem historico, olha o resultado como um revisor externo olharia, e as vezes pega coisas que o agente principal nao questiona.
+Na mesma sessao, o Codex tende a defender o que ele mesmo escreveu. E natural — ele construiu gradualmente e nao ve por que mudar. Um novo subagente, sem historico, olha o resultado como um revisor externo olharia, e as vezes pega coisas que o agente principal nao questiona.
 
 ---
 

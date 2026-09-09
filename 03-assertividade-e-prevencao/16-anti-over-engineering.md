@@ -1,14 +1,14 @@
 # Prompt 16 — Anti-Over-Engineering
 
 **Categoria:** Assertividade e Prevencao de Erros
-**Objetivo:** Impedir que o Claude adicione abstracoes desnecessarias, cria interfaces para 1 implementacao, gere helpers prematuros, introduza design patterns onde um `if` resolveria, ou "deixe pronto para o futuro" sem que ninguem tenha pedido.
-**Quando usar:** Sempre que voce pedir algo simples e suspeitar que o Claude vai "engineering it into oblivion". Projetos com cultura de simplicidade devem colocar isso no `CLAUDE.md` permanentemente.
+**Objetivo:** Impedir que o Codex adicione abstracoes desnecessarias, cria interfaces para 1 implementacao, gere helpers prematuros, introduza design patterns onde um `if` resolveria, ou "deixe pronto para o futuro" sem que ninguem tenha pedido.
+**Quando usar:** Sempre que voce pedir algo simples e suspeitar que o Codex vai "engineering it into oblivion". Projetos com cultura de simplicidade devem colocar isso no `AGENTS.md` permanentemente.
 
 ---
 
 ## Por que este prompt existe
 
-Claude tem tendencia a parecer inteligente. Isso significa, as vezes, transformar 10 linhas simples em 80 linhas com factory, strategy, builder e 3 interfaces. O codigo fica mais "enterprise" e menos util. Este prompt corta isso na raiz.
+Codex tem tendencia a parecer inteligente. Isso significa, as vezes, transformar 10 linhas simples em 80 linhas com factory, strategy, builder e 3 interfaces. O codigo fica mais "enterprise" e menos util. Este prompt corta isso na raiz.
 
 ---
 
@@ -56,7 +56,7 @@ Sem minha aprovacao, vai no simples.
 
 ## Descricao da tarefa
 
-[COLE AQUI O QUE VOCE QUER QUE SEJA FEITO. Claude vai executar respeitando as regras acima.]
+[COLE AQUI O QUE VOCE QUER QUE SEJA FEITO. Codex vai executar respeitando as regras acima.]
 
 ## Confirme
 
@@ -67,7 +67,7 @@ Responda "modo simples ativo" e aguarde a tarefa.
 
 ## Variacoes e Ajustes
 
-**Projeto que JA tem camadas (DDD, Clean Architecture):** peca para o Claude respeitar o padrao EXISTENTE em vez de simplificar. Ou seja, a regra se torna "nao adicionar abstracao nova alem do que ja existe".
+**Projeto que JA tem camadas (DDD, Clean Architecture):** peca para o Codex respeitar o padrao EXISTENTE em vez de simplificar. Ou seja, a regra se torna "nao adicionar abstracao nova alem do que ja existe".
 
 **Prototipo/POC:** reforce 2x — em POC, simplicidade e critica. Nada de preparar para producao.
 
@@ -77,8 +77,8 @@ Responda "modo simples ativo" e aguarde a tarefa.
 
 ## Dicas de uso
 
-- Esta e uma das regras mais valiosas para colocar no `CLAUDE.md`. Ela muda o comportamento padrao para todo projeto.
-- Quando o Claude violar, nao explique longamente. Diga "too much. simplifique". Ele ajusta.
+- Esta e uma das regras mais valiosas para colocar no `AGENTS.md`. Ela muda o comportamento padrao para todo projeto.
+- Quando o Codex violar, nao explique longamente. Diga "too much. simplifique". Ele ajusta.
 - Cultive o habito: sempre que ver uma entrega, pergunte "o que daria para remover e ainda funcionar?" E remova.
 
 ## Sinal de que deu certo

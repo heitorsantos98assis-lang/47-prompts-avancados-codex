@@ -1,14 +1,14 @@
 # Prompt 07 — Estrategias Anti-Context-Bloat
 
 **Categoria:** Economia Inteligente de Tokens
-**Objetivo:** Impedir, durante a propria sessao, que o Claude encha o contexto com leituras desnecessarias, explorando o projeto de forma disciplinada e usando as ferramentas certas na ordem certa.
-**Quando usar:** Em tarefas longas ou exploratorias, onde voce sente que o Claude esta "lendo demais" — abrindo arquivo apos arquivo sem criterio.
+**Objetivo:** Impedir, durante a propria sessao, que o Codex encha o contexto com leituras desnecessarias, explorando o projeto de forma disciplinada e usando as ferramentas certas na ordem certa.
+**Quando usar:** Em tarefas longas ou exploratorias, onde voce sente que o Codex esta "lendo demais" — abrindo arquivo apos arquivo sem criterio.
 
 ---
 
 ## Por que este prompt existe
 
-Context bloat e o inimigo silencioso. Um Claude mal orientado abre 40 arquivos para resolver uma tarefa que exigiria 5. Cada Read traz o arquivo inteiro para o contexto, mesmo que so 10 linhas importem. Este prompt impoe uma disciplina de exploracao que elimina 60-80% das leituras sem perder precisao.
+Context bloat e o inimigo silencioso. Um Codex mal orientado abre 40 arquivos para resolver uma tarefa que exigiria 5. Cada Read traz o arquivo inteiro para o contexto, mesmo que so 10 linhas importem. Este prompt impoe uma disciplina de exploracao que elimina 60-80% das leituras sem perder precisao.
 
 ---
 
@@ -79,8 +79,8 @@ Responda apenas "disciplina ativa" para confirmar que voce entendeu e pode segui
 ## Dicas de uso
 
 - Cole este prompt no comeco de sessoes longas, antes de pedir a tarefa real.
-- Se sentir que o Claude "esqueceu" as regras depois de 20 turnos, recole abreviado: "lembre-se das regras anti-context-bloat".
-- Voce pode colocar uma versao curta dessas regras direto no `CLAUDE.md` para aplicar sempre.
+- Se sentir que o Codex "esqueceu" as regras depois de 20 turnos, recole abreviado: "lembre-se das regras anti-context-bloat".
+- Voce pode colocar uma versao curta dessas regras direto no `AGENTS.md` para aplicar sempre.
 
 ## Sinal de que deu certo
 

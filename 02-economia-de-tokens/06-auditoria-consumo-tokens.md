@@ -1,29 +1,29 @@
 # Prompt 06 — Auditoria de Consumo de Tokens do Projeto
 
 **Categoria:** Economia Inteligente de Tokens
-**Objetivo:** Fazer o Claude olhar seu projeto com olhos de auditor de custo, identificar o que infla o contexto em cada sessao, e propor 5 mudancas concretas que reduzam consumo sem perder qualidade.
+**Objetivo:** Fazer o Codex olhar seu projeto com olhos de auditor de custo, identificar o que infla o contexto em cada sessao, e propor 5 mudancas concretas que reduzam consumo sem perder qualidade.
 **Quando usar:** Quando voce percebe que suas sessoes estao ficando caras, a barra de contexto enche rapido, ou voce comeca a ter compactacao automatica com frequencia.
 
 ---
 
 ## Por que este prompt existe
 
-Muita gente culpa o Claude por "ser caro" sem perceber que e o proprio projeto que esta empurrando coisa desnecessaria para dentro do contexto: `CLAUDE.md` gigante, arquivos imensos que deveriam estar modularizados, schemas tipo `.d.ts` com 20 mil linhas que aparecem em toda sessao, logs acumulados, dumps no repo.
+Muita gente culpa o Codex por "ser caro" sem perceber que e o proprio projeto que esta empurrando coisa desnecessaria para dentro do contexto: `AGENTS.md` gigante, arquivos imensos que deveriam estar modularizados, schemas tipo `.d.ts` com 20 mil linhas que aparecem em toda sessao, logs acumulados, dumps no repo.
 
-Este prompt transforma o Claude em um auditor de custo — ele olha o projeto como um forense e aponta os pontos de "peso morto" que voce carrega sem ganho.
+Este prompt transforma o Codex em um auditor de custo — ele olha o projeto como um forense e aponta os pontos de "peso morto" que voce carrega sem ganho.
 
 ---
 
 ## PROMPT
 
 ```
-Voce vai fazer uma auditoria de consumo de tokens deste projeto, como se eu estivesse pagando uma consultoria para reduzir meu custo mensal com Claude Code em 30-50%.
+Voce vai fazer uma auditoria de consumo de tokens deste projeto, como se eu estivesse pagando uma consultoria para reduzir meu custo mensal com Codex em 30-50%.
 
 Siga este protocolo:
 
 ## Etapa 1 — Contexto Automatico
 
-1. Leia o `CLAUDE.md`. Me diga: quantas linhas, quantos caracteres, e estime os tokens (1 token ~= 4 caracteres em portugues).
+1. Leia o `AGENTS.md`. Me diga: quantas linhas, quantos caracteres, e estime os tokens (1 token ~= 4 caracteres em portugues).
 2. Liste arquivos na raiz que podem ser carregados automaticamente (README, docs, etc).
 3. Identifique o conteudo que TODA sessao carrega sem voce perceber.
 
@@ -44,7 +44,7 @@ Rode esta investigacao:
 
 1. Procure por sinais de arquivos gerados commitados: `*.d.ts` gigantes, `generated/`, `dist/`, `build/`, `*.pb.go`, snapshots enormes.
 2. Para cada um, verifique se esta em `.gitignore`. Se nao esta, avalie se faz sentido estar.
-3. Se faz sentido commitar, avalie se faz sentido estar "visivel" para o Claude — pode adicionar ao `.claude/ignore` (se suportado) ou documentar no CLAUDE.md que o Claude nao deve abrir.
+3. Se faz sentido commitar, avalie se faz sentido estar "visivel" para o Codex — pode adicionar ao `.codex/ignore` (se suportado) ou documentar no AGENTS.md que o Codex nao deve abrir.
 
 ## Etapa 4 — Dump no Repo
 
@@ -57,9 +57,9 @@ Procure por padroes de "dump":
 
 Liste os encontrados com tamanho e sugestao (ignorar, mover, descartar).
 
-## Etapa 5 — CLAUDE.md
+## Etapa 5 — AGENTS.md
 
-Abra o `CLAUDE.md`. Avalie:
+Abra o `AGENTS.md`. Avalie:
 
 - Linhas obvias que poderiam ser inferidas do codigo (remova)
 - Repetidas informacoes da stack ja visiveis em package.json (remova)
@@ -90,7 +90,7 @@ Entregue um relatorio com:
 
 **Projeto com poucos arquivos grandes mas muitos pequenos:** adicione *"Verifique tambem numero total de arquivos — projetos com 10 mil arquivos de 20 linhas cada tambem pesam em exploracao."*
 
-**Projeto TypeScript com `.d.ts` gerados:** peca para o Claude avaliar se os tipos gerados podem ser movidos para fora da area de busca padrao.
+**Projeto TypeScript com `.d.ts` gerados:** peca para o Codex avaliar se os tipos gerados podem ser movidos para fora da area de busca padrao.
 
 **Projeto com muitos testes e snapshots:** peca auditoria especifica em `__snapshots__/` — snapshots gigantes sao tokens invisiveis.
 

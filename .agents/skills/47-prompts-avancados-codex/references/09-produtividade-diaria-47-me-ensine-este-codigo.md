@@ -126,7 +126,7 @@ Comece pela Etapa 1.
 
 - Este e um dos prompts mais subutilizados. O Codex e excelente tutor quando voce o usa como tal.
 - Aprender no contexto do proprio projeto e mais durador do que tutorial generico.
-- Anote os padroes que aprender em `docs/claude/glossario.md` para revisar depois.
+- Anote os padroes que aprender em `docs/codex/glossario.md` para revisar depois.
 
 ## Sinal de que deu certo
 

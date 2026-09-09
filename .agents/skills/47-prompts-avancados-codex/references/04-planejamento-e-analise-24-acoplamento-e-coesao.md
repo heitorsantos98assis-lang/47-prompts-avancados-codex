@@ -87,7 +87,7 @@ Cada recomendacao deve ter:
 
 ### Etapa 7 — Output
 
-Entregue `docs/claude/ACOPLAMENTO.md` com:
+Entregue `docs/codex/ACOPLAMENTO.md` com:
 
 1. Matriz de dependencias
 2. Tabela de metricas por modulo

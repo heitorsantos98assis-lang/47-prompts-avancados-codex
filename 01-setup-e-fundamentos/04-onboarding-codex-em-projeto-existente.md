@@ -1,14 +1,14 @@
-# Prompt 04 — Onboarding do Claude em Projeto Existente
+# Prompt 04 — Onboarding do Codex em Projeto Existente
 
 **Categoria:** Setup e Fundamentos
-**Objetivo:** Fazer o Claude construir, em uma unica sessao, um entendimento real de um codebase que ele nunca viu — arquitetura, fluxos, pontos de entrada, dependencias chave — e gerar um documento de onboarding que sirva de referencia para sessoes futuras.
-**Quando usar:** Quando voce acabou de clonar um repo existente (seja porque entrou num projeto novo, seja porque vai mexer num repo antigo do time), e quer que o Claude "saiba" do projeto antes de pedir tarefas.
+**Objetivo:** Fazer o Codex construir, em uma unica sessao, um entendimento real de um codebase que ele nunca viu — arquitetura, fluxos, pontos de entrada, dependencias chave — e gerar um documento de onboarding que sirva de referencia para sessoes futuras.
+**Quando usar:** Quando voce acabou de clonar um repo existente (seja porque entrou num projeto novo, seja porque vai mexer num repo antigo do time), e quer que o Codex "saiba" do projeto antes de pedir tarefas.
 
 ---
 
 ## Por que este prompt existe
 
-O erro mais comum ao usar Claude Code em projeto existente e pedir uma tarefa direto, sem dar tempo para ele explorar. Resultado: Claude chuta estrutura, inventa caminhos, usa padrao errado, e voce gasta tokens corrigindo.
+O erro mais comum ao usar Codex em projeto existente e pedir uma tarefa direto, sem dar tempo para ele explorar. Resultado: Codex chuta estrutura, inventa caminhos, usa padrao errado, e voce gasta tokens corrigindo.
 
 Fazer um onboarding guiado no comeco custa uns ~15-30k tokens uma unica vez, mas paga de volta em toda sessao seguinte, porque o conhecimento fica versionado em um `ONBOARDING.md` que vira referencia.
 
@@ -17,13 +17,13 @@ Fazer um onboarding guiado no comeco custa uns ~15-30k tokens uma unica vez, mas
 ## PROMPT
 
 ```
-Voce e um novo desenvolvedor neste projeto. Eu quero que voce faca um onboarding completo de si mesmo, como se fosse seu primeiro dia, e no final produza um documento `docs/ONBOARDING-CLAUDE.md` que servira de referencia para suas sessoes futuras.
+Voce e um novo desenvolvedor neste projeto. Eu quero que voce faca um onboarding completo de si mesmo, como se fosse seu primeiro dia, e no final produza um documento `docs/ONBOARDING-AGENTS.md` que servira de referencia para suas sessoes futuras.
 
 Siga este protocolo, nesta ordem:
 
 ## Etapa 1 — Orientacao (5 minutos de leitura)
 
-1. Leia `README.md`, `CLAUDE.md` (se existir), `CONTRIBUTING.md`, `package.json` / `pyproject.toml` / equivalente.
+1. Leia `README.md`, `AGENTS.md` (se existir), `CONTRIBUTING.md`, `package.json` / `pyproject.toml` / equivalente.
 2. Liste a arvore ate 2 niveis, ignorando node_modules, .git, dist, build.
 3. Me responda em 5 linhas: o que este projeto faz, em termos de produto?
 
@@ -72,9 +72,9 @@ Escolha 2 fluxos de negocio reais que voce consiga rastrear ponta a ponta. Exemp
 
 Escreva o fluxo em forma de lista numerada, com caminho de arquivo em cada passo.
 
-## Etapa 6 — Producao do ONBOARDING-CLAUDE.md
+## Etapa 6 — Producao do ONBOARDING-AGENTS.md
 
-Reuna tudo em `docs/ONBOARDING-CLAUDE.md` com estas secoes:
+Reuna tudo em `docs/ONBOARDING-AGENTS.md` com estas secoes:
 
 1. Sumario do Produto (5 linhas)
 2. Stack e Ferramentas
@@ -112,9 +112,9 @@ Pode comecar pela Etapa 1.
 ## Dicas de uso
 
 - Reserve uma sessao dedicada para este prompt. Nao misture com tarefas reais.
-- No final, revise o `ONBOARDING-CLAUDE.md` humanamente e corrija coisas erradas. Commit ele no repo.
-- Referencie esse arquivo em `CLAUDE.md` com uma linha: "Leia `docs/ONBOARDING-CLAUDE.md` antes de tarefas nao triviais."
+- No final, revise o `ONBOARDING-AGENTS.md` humanamente e corrija coisas erradas. Commit ele no repo.
+- Referencie esse arquivo em `AGENTS.md` com uma linha: "Leia `docs/ONBOARDING-AGENTS.md` antes de tarefas nao triviais."
 
 ## Sinal de que deu certo
 
-Em uma proxima sessao, peca ao Claude: "me mostre o fluxo completo de [X]". Ele deve conseguir responder com caminhos reais sem explorar de novo, porque o onboarding esta na memoria do projeto.
+Em uma proxima sessao, peca ao Codex: "me mostre o fluxo completo de [X]". Ele deve conseguir responder com caminhos reais sem explorar de novo, porque o onboarding esta na memoria do projeto.

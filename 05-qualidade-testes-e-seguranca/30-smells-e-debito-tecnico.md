@@ -84,7 +84,7 @@ Variaveis globais sendo modificadas de varios lugares. Dificulta teste e paralel
 
 ## Output
 
-Entregue `docs/claude/SMELLS.md` com:
+Entregue `docs/codex/SMELLS.md` com:
 
 1. **Sumario** — contagem por tipo
 2. **Top 10 priorizados por impacto** (criticos para refactor)
@@ -111,7 +111,7 @@ Comece pela lista dos 10 long methods.
 
 ## Variacoes e Ajustes
 
-**Projeto com ferramentas de analise (SonarQube, Code Climate, CodeScene):** compare os achados do Claude com os da ferramenta. Complementares — ferramenta pega quantidade, Claude pega contexto.
+**Projeto com ferramentas de analise (SonarQube, Code Climate, CodeScene):** compare os achados do Codex com os da ferramenta. Complementares — ferramenta pega quantidade, Codex pega contexto.
 
 **Codigo idiomatico de linguagem nao-OO (Go, Rust):** ignore smells OO (god class, polimorfismo) e reforce outros (long function, deep nesting, goroutines abandonadas para Go).
 
