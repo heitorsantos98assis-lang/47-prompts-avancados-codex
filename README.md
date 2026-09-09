@@ -142,4 +142,4 @@ Prompts curtos e praticos para o dia-a-dia. Standup, onboarding relampago e apre
 
 Duvidas? Entre em contato pelo suporte da area de membros.
 
-Feito com carinho pela **Bravy**.
+Feito com carinho pela **HL**.
